@@ -36,8 +36,8 @@ resource "yandex_compute_instance" "nat-instance" {
   hostname    = "nat-instance"
   platform_id = "standard-v2"
   resources {
-    cores  = 4
-    memory = 8
+    cores  = 2
+    memory = 4
   }
   boot_disk {
     initialize_params {
@@ -97,8 +97,8 @@ resource "yandex_compute_instance" "bastion" {
   platform_id = "standard-v2"
   service_account_id = "${module.sa_and_key.s3_writer}"
   resources {
-    cores  = 4
-    memory = 8
+    cores  = 2
+    memory = 4
   }
   boot_disk {
     initialize_params {
