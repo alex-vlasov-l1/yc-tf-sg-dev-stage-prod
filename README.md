@@ -1,4 +1,4 @@
-# Terraform and Security Groups Example
+# Terraform and Security Groups Example 2
 Mock dev/stage/prod environment with sample security groups to provide isolation
 
 ## Предварительная настройка
